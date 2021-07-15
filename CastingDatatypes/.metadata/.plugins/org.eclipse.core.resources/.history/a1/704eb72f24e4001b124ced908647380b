@@ -1,0 +1,68 @@
+package main;
+import java.util.Scanner;
+public class Converter {
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+int menuSelection = 0;
+while (menuSelection !=5){
+	System.out.println("Please select an option:");
+    System.out.print("1.) inches to centimeters");
+    System.out.print("2.)yards to meters");
+    System.out.print("3.) kilometers to miles");
+    System.out.print("4.) pounds to kilograms");
+    System.out.print("5.)mililiters to liters");
+    System.out.print("Quit");
+    menuSelection = input.nextInt();
+    
+    switch(menuSelection){
+
+    case 1:
+    	
+    	 double inchNum, centNum = 2.54, conv1;
+         System.out.print("Please Enter The First Number: ");
+         inchNum = input.nextInt();
+         System.out.print("\nPlease Enter The Second Number: ");
+         centNum = input.nextInt();
+         conv1 = inchNum * centNum;
+         System.out.print("Conversion of inches to centimeters " +conv1);
+        break;
+    case 2:
+    	double yardNum, meterNum = 0.914, conv2;
+        System.out.print("Please Enter The First Number: ");
+        yardNum = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        meterNum = input.nextInt();
+        conv2 = yardNum * meterNum;
+        System.out.print("Conversion of yards to meters " +conv2);        
+        break;
+    case 3:
+    	double mileNum = 1.609, kilomNum , conv3;
+    	System.out.print("Please Enter The First Number: ");
+    	kilomNum = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        mileNum = input.nextInt();
+        conv3 = kilomNum / mileNum;	
+        System.out.print("Conversion of kilometers to miles " +conv3);
+        break;
+    case 4:
+    	double poundNum, kilogNum = 2.205 , conv4;
+        System.out.print("Please Enter The First Number: ");
+        poundNum = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        kilogNum = input.nextInt();
+        conv4 = poundNum / kilogNum;
+        System.out.print("Conversion of pounds to kilograms " +conv4);
+    case 5:
+    	int mililiNum1, literNum = 1000, conv5;
+        System.out.print("Please Enter The First Number: ");
+        mililiNum1 = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        literNum = input.nextInt();
+        conv5 = mililiNum1 / literNum;
+        System.out.print("Conversion of mililiters to liters " +conv5);
+   
+    
+    		}
+		}
+	}
+}

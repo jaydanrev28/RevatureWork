@@ -1,0 +1,76 @@
+package main;
+import java.util.Scanner;
+public class Converter {
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+int menuSelection = 0;
+while (menuSelection !=5){
+	System.out.println("Please select an option:");
+    System.out.print("1.inches to centimeters");
+    System.out.print("2. yards to meters");
+    System.out.print("3. kilometers to miles");
+    System.out.print("4.kilometers to meters");
+    System.out.print("5.meters to centimeters");
+    System.out.print("Quit");
+    menuSelection = input.nextInt();
+    
+    switch(menuSelection){
+
+    case 1:
+    	
+    	 double inchNum, centNum = 2.54, conv1;
+         System.out.print("Please Enter The First Number: ");
+         inchNum = input.nextInt();
+         System.out.print("\nPlease Enter The Second Number: ");
+         centNum = input.nextInt();
+         conv1 = inchNum * centNum;
+         System.out.print("Conversion of milimeters to centimeters " +conv1);
+        break;
+    case 2:
+    	double yardNum, meterNum = 0.914, conv2;
+        System.out.print("Please Enter The First Number: ");
+        yardNum = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        meterNum = input.nextInt();
+        conv2 = yardNum * meterNum;
+        System.out.print("Conversion of milimeters to centimeters " +conv2);        
+        break;
+    case 3:
+    	double mileNum = 1.609, kilomNum , conv3;
+    	System.out.print("Please Enter The First Number: ");
+    	kilomNum=iput.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        valNuml = input.nextInt();
+        conv3 = valNumf * valNuml;	
+        System.out.print("Conversion of milimeters to centimeters " +conv3);
+        break;
+    case 4:
+    	int valNumf, valNuml, conv;
+        System.out.print("Please Enter The First Number: ");
+        valNumf = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        valNuml = input.nextInt();
+        conv = valNumf / valNuml;
+        System.out.print("Conversion of milimeters to centimeters " +conv);
+    case 5:
+    	int valNumf, valNuml, conv;
+        System.out.print("Please Enter The First Number: ");
+        valNumf = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        valNuml = input.nextInt();
+        conv = valNumf / valNuml;
+        System.out.print("Conversion of milimeters to centimeters " +conv);
+    case 6:
+    	int valNumf, valNuml, conv;
+        System.out.print("Please Enter The First Number: ");
+        valNumf = input.nextInt();
+        System.out.print("\nPlease Enter The Second Number: ");
+        valNuml = input.nextInt();
+        conv = valNumf * valNuml;
+        System.out.print("Conversion of milimeters to centimeters " +conv);
+        break;
+    
+    		}
+		}
+	}
+}

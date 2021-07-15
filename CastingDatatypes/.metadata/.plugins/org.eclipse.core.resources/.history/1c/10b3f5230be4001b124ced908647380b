@@ -1,0 +1,18 @@
+package main;
+
+public class Converter {
+public static void main(String[] args) {
+int menuSelection = 0;
+while (menuSelection !=6){
+	System.out.println("Please select an option:");
+    System.out.print("1.)  meters to decimeters");
+    System.out.print("2.) milliliters to liters");
+    System.out.print("3.) grams to nanograms");
+    System.out.print("4.)  centimeters to kilometers");
+    System.out.print("5.)  megagrams to centigrams");
+    System.out.print("6.) Exit\n");
+    System.out.print("\nEnter Your Menu Choice: ");
+    
+}
+}
+}
