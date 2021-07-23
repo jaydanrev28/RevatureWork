@@ -14,7 +14,7 @@ public class RoomManager {
 	// Connection from the main method in the Main class to provide functionality
 	public void init() {
 
-		Room homeTheater = new Room("The Home Theater", "an at home movie theater ",
+		Room homeTheater = new Room("The Home Theater", "An at home movie theater ",
 				" Located on the first floor. This square room has the west and east walls Completely covered with speakers for surround sound.\n"
 						+ " The floor is covered in a large persian carpet with 5 rows of 3 black leather seats with temperature controls.\n"
 						+ " Against the south wall is the movie theater screen with emergency exit, and the IMAX/4K theater projector in located on the north wall of the Home Theater\n");
@@ -35,16 +35,16 @@ public class RoomManager {
 				"A place where people handle their business and sleep");
 		Room bathroom = new Room("The Bathroom", " A bathroom with a toilet and shower",
 				"A place where people handle their business");
-		Room secondFloor = new Room("The Second Floor", " A large space with a Bedroom and Balcony",
+		Room secondFloor = new Room("The Second Floor", " The Second Floor large with a Bedroom and Balcony",
 				"The large space enough to fit 2 couches and a loveseat .To the east there is bedroom and to the north is the balcony.");
 		Room balcony = new Room("The Balcony", "A large Balcony",
 				"a platform enclosed by a wall or balustrade on the outside of a building, with access from an upper-floor door.\n"
 						+ "The marble  floor leads South into doorway, next to a staircase that leads up to the second floor.\n"
 						+ "North of the doorway is the balcony with a breathtaking view.");
-		Room garage = new Room("The Garage", " A large car space with Garage Door",
+		Room garage = new Room("The Garage", " A large car space with Garage ",
 				"The large carspace enough to fit 6 cars with a noth facing Garage door. To the south there is door leading up the stair case to the first floor.\n"
 						+ "to the east and west there is a wall with bike racks and car tools/parts");
-		Room firstFloor = new Room("The First Floor", "First Floor", "This is the first floor of the house\n");
+		Room firstFloor = new Room("The First Floor", "The main living area", "This is the first floor of the house\n");
 		Items painting = new Items("Painting", "Mona Lisa Painting",
 				"The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci.\n"
 						+ "Considered an archetypal masterpiece of the Italian Renaissance."+

@@ -15,7 +15,7 @@ public class Room extends Fixture {
 	public Room(String name, String shortDescription, String longDescription) {
 		super(name, shortDescription, longDescription);
 		// this declares the exit array with the directions
-		this.exits = new Room[directions.size()];
+	//	this.exits = new Room[directions.size()];
 		// TODO Auto-generated constructor stub
 	}
 
@@ -55,9 +55,9 @@ public void removeItem(Items item) {
 		String exits = "";
 		for (String direction : this.directions) {
 			if (getExit(direction) != null)
-				exits += (direction + ": " + getExit(direction).getShortDescription() + "\n");
+				exits += (direction + ": " + getExit(direction).getName() + "\n");
 		}
-		return this.getName() + "\n\n" + this.getLongDescription() + "\n\n" + "Exits:\n" +exits;
+		return this.getName() + "\n\n" +this.getShortDescription() + "\n\n" +this.getLongDescription() + "\n\n" + "Exits:\n" + exits;
 	}
 
 }

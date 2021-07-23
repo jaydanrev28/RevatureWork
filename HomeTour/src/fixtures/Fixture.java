@@ -6,17 +6,17 @@ public abstract class Fixture {
 	private String name;
 	private String shortDescription;
 	private String longDescription;
-
+	
 //constructor  object to be so that room manager can inherit it
 	public Fixture(String name, String shortDescription, String longDescription) {
+	
 		this.name = name;
 		this.shortDescription = shortDescription;
 		this.longDescription = longDescription;
 	}
 public Fixture() {
 }
-
-// pulls the name and description of the room through this abstract class
+	// pulls the name and description of the room through this abstract class
 	public String getName() {
 		return name;
 	}
@@ -42,8 +42,9 @@ public Fixture() {
 	}
 	@Override
 	public String toString() {
-		return "Item:" + name +"\n" +shortDescription + "\n"
-				+ longDescription ;
+
+		return name +"\n" +shortDescription + "\n"
+				+ longDescription + "Item: \n" ;
 	}
 
 }

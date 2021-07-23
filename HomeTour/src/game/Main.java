@@ -34,7 +34,7 @@ public class Main {
 		String input = s.nextLine().toLowerCase();
 		String[] strVar = input.split(" ");
 		return strVar;
-
+		
 	}
 
 // the currentRoom shows what room you are in in the player class
@@ -42,6 +42,9 @@ public class Main {
 
 		// input[0] = input[0].toLowerCase();
 		switch (input[0]) {
+		case "begin":
+			 System.out.println("Type in a number and press Enter...");
+		        break;
 		case "go":
 			player.setCurrentRoom(player.getCurrentRoom().getExit(input[1]));
 			break;
